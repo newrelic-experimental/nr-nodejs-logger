@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "test-server": "export NEW_RELIC_NO_CONFIG_FILE=true;export NEW_RELIC_APP_NAME=NodeLoggerTestServer;export NEW_RELIC_DISTRIBUTED_TRACING_ENABLED=true;./test/server.js"
+    "test-server": "export NEW_RELIC_NO_CONFIG_FILE=true;export NEW_RELIC_APP_NAME=NodeLoggerTestServer;export NEW_RELIC_DISTRIBUTED_TRACING_ENABLED=true;./examples/server.js"
   },
   "author": "sdewitt@newrelic.com",
   "license": "Apache-2.0",

@@ -3,10 +3,14 @@ const newrelic = require('newrelic')
 const util = require('util'),
   express = require('express'),
   app = express(),
+  // Import winston
   { createLogger, format } = require('winston'),
   { combine, timestamp, label, errors } = format,
+  // Import the New Relic Winston enricher
   newrelicFormatter = require('@newrelic/winston-enricher'),
+  // Import the New Relic NodeJS Logger and Winston transport
   { NewRelicApiLogger, NewRelicApiTransport } = require('../index'),
+  // Create a new "standalone" logger instance
   logger = new NewRelicApiLogger({
     debug: true,
     newrelic: newrelic,
@@ -16,6 +20,7 @@ const util = require('util'),
       logger: 'newrelic',
     },
   }),
+  // Create a new instance of the New Relic Winston transport
   newRelicApiTransport = new NewRelicApiTransport({
     attributes: {
       app: 'test',
@@ -23,13 +28,16 @@ const util = require('util'),
       logger: 'winston',
     }
   }),
+  // Create a Winston logger with the New Relic enricher and transport
   winstonLogger = createLogger({
     format: combine(
       label({ label: 'winston.test' }),
       timestamp(),
       errors(),
+      // The enricher format
       newrelicFormatter()
     ),
+    // The custom transport
     transports: [newRelicApiTransport]
   })
 
