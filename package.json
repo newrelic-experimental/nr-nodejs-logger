@@ -1,6 +1,6 @@
 {
   "name": "nr-nodejs-logger",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "New Relic API logger for Node",
   "main": "index.js",
   "scripts": {
