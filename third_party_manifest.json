@@ -1,0 +1,88 @@
+{
+  "lastUpdated": "Thu Oct 29 2020 10:41:23 GMT-0400 (Eastern Daylight Time)",
+  "projectName": "New Relic NodeJS Logger",
+  "projectUrl": "https://github.com/newrelic-experimental/nr-nodejs-logger",
+  "includeDev": true,
+  "dependencies": {
+    "winston@3.3.3": {
+      "name": "winston",
+      "version": "3.3.3",
+      "range": "^3.3.3",
+      "licenses": "MIT",
+      "repoUrl": "https://github.com/winstonjs/winston",
+      "versionedRepoUrl": "https://github.com/winstonjs/winston/tree/v3.3.3",
+      "licenseFile": "node_modules/winston/LICENSE",
+      "licenseUrl": "https://github.com/winstonjs/winston/blob/v3.3.3/LICENSE",
+      "licenseTextSource": "file",
+      "publisher": "Charlie Robbins",
+      "email": "charlie.robbins@gmail.com"
+    }
+  },
+  "devDependencies": {
+    "@newrelic/winston-enricher@0.1.1": {
+      "name": "@newrelic/winston-enricher",
+      "version": "0.1.1",
+      "range": "^0.1.1",
+      "licenses": "Apache-2.0",
+      "repoUrl": "https://github.com/newrelic/newrelic-winston-logenricher-node",
+      "versionedRepoUrl": "https://github.com/newrelic/newrelic-winston-logenricher-node/tree/v0.1.1",
+      "licenseFile": "node_modules/@newrelic/winston-enricher/LICENSE",
+      "licenseUrl": "https://github.com/newrelic/newrelic-winston-logenricher-node/blob/v0.1.1/LICENSE",
+      "licenseTextSource": "file",
+      "publisher": "New Relic Node.js Agent Team",
+      "email": "nodejs@newrelic.com"
+    },
+    "eslint@7.12.1": {
+      "name": "eslint",
+      "version": "7.12.1",
+      "range": "^7.12.1",
+      "licenses": "MIT",
+      "repoUrl": "https://github.com/eslint/eslint",
+      "versionedRepoUrl": "https://github.com/eslint/eslint/tree/v7.12.1",
+      "licenseFile": "node_modules/eslint/LICENSE",
+      "licenseUrl": "https://github.com/eslint/eslint/blob/v7.12.1/LICENSE",
+      "licenseTextSource": "file",
+      "publisher": "Nicholas C. Zakas",
+      "email": "nicholas+npm@nczconsulting.com"
+    },
+    "express@4.17.1": {
+      "name": "express",
+      "version": "4.17.1",
+      "range": "^4.17.1",
+      "licenses": "MIT",
+      "repoUrl": "https://github.com/expressjs/express",
+      "versionedRepoUrl": "https://github.com/expressjs/express/tree/v4.17.1",
+      "licenseFile": "node_modules/express/LICENSE",
+      "licenseUrl": "https://github.com/expressjs/express/blob/v4.17.1/LICENSE",
+      "licenseTextSource": "file",
+      "publisher": "TJ Holowaychuk",
+      "email": "tj@vision-media.ca"
+    },
+    "mocha@8.2.0": {
+      "name": "mocha",
+      "version": "8.2.0",
+      "range": "^8.2.0",
+      "licenses": "MIT",
+      "repoUrl": "https://github.com/mochajs/mocha",
+      "versionedRepoUrl": "https://github.com/mochajs/mocha/tree/v8.2.0",
+      "licenseFile": "node_modules/mocha/LICENSE",
+      "licenseUrl": "https://github.com/mochajs/mocha/blob/v8.2.0/LICENSE",
+      "licenseTextSource": "file",
+      "publisher": "TJ Holowaychuk",
+      "email": "tj@vision-media.ca"
+    },
+    "newrelic@6.13.2": {
+      "name": "newrelic",
+      "version": "6.13.2",
+      "range": "^6.13.2",
+      "licenses": "Apache-2.0",
+      "repoUrl": "https://github.com/newrelic/node-newrelic",
+      "versionedRepoUrl": "https://github.com/newrelic/node-newrelic/tree/v6.13.2",
+      "licenseFile": "node_modules/newrelic/LICENSE",
+      "licenseUrl": "https://github.com/newrelic/node-newrelic/blob/v6.13.2/LICENSE",
+      "licenseTextSource": "file",
+      "publisher": "New Relic Node.js agent team",
+      "email": "nodejs@newrelic.com"
+    }
+  }
+}
